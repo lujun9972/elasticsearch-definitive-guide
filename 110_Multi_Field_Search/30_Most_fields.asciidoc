@@ -1,7 +1,7 @@
 [[most-fields]]
 === 多数字段
 
-全文搜索被称作是 _召回率（Recall）_ 与 _精确率（Precision）_ 的战场： _召回率_ ——返回结果中的所有文档都是相关的；((("most fields queries")))((("multifield search", "most fields queries"))) _精确率_ ——返回结果中没有不相关的文档。目的是在结果的第一页中为用户呈现最为相关的文档。
+全文搜索被称作是 _召回率（Recall）_ 与 _精确率（Precision）_ 的战场： _召回率_ ——返回所有的相关文档；((("most fields queries")))((("multifield search", "most fields queries"))) _精确率_ ——不返回无关文档。目的是在结果的第一页中为用户呈现最为相关的文档。
 
 为了提高召回率的效果，我们扩大搜索范围((("recall", "improving in full text searches")))——不仅返回与用户搜索词精确匹配的文档，还会返回我们认为与查询相关的所有文档。如果一个用户搜索 “quick brown box” ，一个包含词语 `fast foxes` 的文档被认为是非常合理的返回结果。
 
