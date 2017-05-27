@@ -20,7 +20,7 @@ GET /_validate/query?explain
 --------------------------------------------------
 // SENSE: 110_Multi_Field_Search/55_Not_analyzed.json
 
-因为 `title` 字段是未分析过的，Elasticsearch 会将 “peter smith” 这个完整的字符串作为查询条件来搜索！
+因为 `title` 字段是未分析过的，Elasticsearch 会使用组成 “peter smith” 这个完整的字符串中的单个词作为查询条件来搜索！
 
     title:peter smith
     (
